@@ -1,17 +1,15 @@
-# Use Python 3.10 as base image
-FROM python:3.10-bullseye
+# Use Python 3.10 with bookworm (newer sqlite)
+FROM python:3.10-bookworm
 
-# Set working directory
 WORKDIR /app
 
-# Copy all files to container
-COPY . /app
+COPY requirements.txt /app/
 
-# Install Python dependencies
+# install deps
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
-# Expose port 7860 (Hugging Face Spaces default port)
+COPY . /app
+
 EXPOSE 7860
 
-# Run the FastAPI app
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
