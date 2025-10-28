@@ -13,3 +13,4 @@ sentence-transformers
 pypdf
 streamlit
 langchain_mongodb==0.7.1
+pysqlite3-binary
