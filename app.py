@@ -444,7 +444,7 @@ async def health_check():
 async def root():
     return {
         "message": "Welcome to Nivakaran's Portfolio API",
-        "description": "Learn about reforestation, tree planting, and environmental conservation",
+        "description": "Learn about Nivakaran",
         "endpoints": {
             "ask_question": "/ask",
             "get_history": "/history",

@@ -7,9 +7,9 @@ langchain_community==0.3.27
 langchain_chroma==0.2.4
 langchain_huggingface==0.3.0
 dotenv
-pillow
 pydantic
-sentence_transformers
+pillow
+sentence-transformers
 pypdf
+streamlit
 langchain_mongodb==0.7.1
-sentence_transformers
