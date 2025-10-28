@@ -1,5 +1,5 @@
 # Use Python 3.10 as base image
-FROM python:3.10.9
+FROM python:3.10-bullseye
 
 # Set working directory
 WORKDIR /app
