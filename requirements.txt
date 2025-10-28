@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+langchain==0.0.215
+langchain_groq
+langchain_core
+langchain_community
+langchain_chroma
+langchain_huggingface
+dotenv
+pillow
+pydantic
+sentence_transformers
+pypdf
+langchain_mongodb
+sentence_transformers
